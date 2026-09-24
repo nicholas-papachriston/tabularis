@@ -15,7 +15,9 @@ All commands work via `npx` — no global install required.
 npx gitnexus analyze
 ```
 
-Run from the project root. This parses all source files, builds the knowledge graph, writes it to `.gitnexus/`, and generates CLAUDE.md / AGENTS.md context files.
+Run from the project root. This parses all source files, builds the knowledge graph, writes it to `.gitnexus/`, and updates the GitNexus section in `AGENTS.md`.
+
+`AGENTS.md` is the only agent-instruction file in this repository. Do not add a root `CLAUDE.md`. If `analyze` writes one, delete it and keep that section in `AGENTS.md`.
 
 | Flag           | Effect                                                           |
 | -------------- | ---------------------------------------------------------------- |
